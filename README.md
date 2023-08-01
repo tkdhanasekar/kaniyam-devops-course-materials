@@ -1,7 +1,7 @@
 # kaniyam Linux commands and examples
 Linux commands, usage and examples
 
-###1. date
+### 1. date
 :red_circle:$ date - print or set the system date and time
 
 To display date without any options
