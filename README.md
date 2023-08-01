@@ -65,37 +65,37 @@ Apr 03 2022
 **$ echo [string]**
 **$ echo "Welcome to Linux"**
 
-- To removes all the spaces in between the text
+- To removes all the spaces in between the text\
 **$ echo -e "Welcome \bto \bLinux"**
 WelcometoLinux
 
 - To suppress trailing new line with backspace interpretor ‘-e‘
-to continue without emitting new line.
+to continue without emitting new line.\
 **$ echo -e "Welcome \cto Linux"**
 Welcome
 
-- To create new line from where it is used.
+- To create new line from where it is used.\
 **$ echo -e "Welcome \nto \nLinux"**
 Welcome
 to
 Linux
 
-- To create horizontal tab spaces
+- To create horizontal tab spaces\
 **$ echo -e "Welcome \tto \tLinux"**
 Welcome
 to
 Linux
 
 - To carriage return with backspace interpretor ‘-e‘ to have
-specified carriage return in output
+specified carriage return in output\
 **$ echo -e "Welcome \rto Linux"**
 to Linux
 
-- To create vertical tab spaces
+- To create vertical tab spaces\
 **$ echo -e "Welcome \vto \vLinux"**
 Welcome
 to
 Linux
 
-- To print all files/folders
+- To print all files/folders\
 **$ echo * **
