@@ -59,7 +59,7 @@ Apr 03 2022
 - $ date "+%Y/%m/%d"
 - $ date "+%Y-%m-%d"
 
-###2. echo
+###2. echo\
 :red_circle:**$ echo** - display a line on text
 
 **$ echo [string]**
