@@ -5,7 +5,7 @@ Linux commands, usage and examples
 :red_circle:$ date - print or set the system date and time
 
 To display date without any options\
-$ date
+**$ date\
 
 To display the time in GMT/UTC time zone
 $ date -u
