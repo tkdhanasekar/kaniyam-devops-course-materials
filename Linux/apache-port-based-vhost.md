@@ -91,8 +91,8 @@ access the sites</br>
 http://myserver.hashlabs.in:8080</br>
 and</br>
 http://myserver.hashlabs.in:8081</br>
-&nbsp;
-&nbsp;
+\
+\
 **Note:**</br> 
 In server_ip give your server ip address</br>
 In place of myserver.hashlabs.in give your domain name
