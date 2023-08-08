@@ -12,8 +12,8 @@ sudo systemctl enable apache2
 
 check in browser
 
-http://127.0.0.1
-or
+http://127.0.0.1<br/> 
+or<br/>
 http://localhost
 
 change the content in index.html
@@ -42,5 +42,6 @@ restart the server
 ```
 sudo systemctl restart apache2
 ```
-
+in browser</br>
+http://testpage.com
 
