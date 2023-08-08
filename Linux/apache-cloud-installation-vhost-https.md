@@ -95,7 +95,7 @@ ln -s /snap/bin/certbot /usr/bin/certbot
 sudo certbot --apache
 sudo certbot renew
 ```
-now access the sites
-https://apple.hashlabs.in\
-and\
+now access the sites</br>
+https://apple.hashlabs.in</br>
+and</br>
 https://banana.hashlabs.in
