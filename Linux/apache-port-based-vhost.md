@@ -89,12 +89,11 @@ sudo systemctl restart apache2
 ```
 access the sites
 http://myserver.hashlabs.in:8080</br>
-and
+and</br>
 http://myserver.hashlabs.in:8081</br>
-
 &nbsp;
 &nbsp;
 **Note:** in server_ip give your server ip address</br>
-in place of myserver.hashlabs.in your domain name
+          in place of myserver.hashlabs.in give your domain name
 
 
