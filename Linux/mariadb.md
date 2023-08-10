@@ -126,9 +126,25 @@ From your local machine
 $ mysql -u myuser -p -h <remote_dbserver_ip>
 MariaDB [(none)]>
 ```
-
-
-
+To make mariadb to connect in custom port instead of 3306/TCP
+Use the commands below to change the default MySQL/MariaDB Database port in Linux.
+```
+vim /etc/mysql/mariadb.conf.d/50-server.cnf
+```
+add the parameter port = 4406
+```
+[mysqld]
+port = 4406
+: wq! save and exit
+```
+```
+sudo systemctl restart mariadb.service
+```
+connect remote db with custom port 4406
+```
+mysql -u myuser -p -h <remote_dbserver_ip> -P 4406
+mysql -u kaniyam -p -h kaniyam.hopto.org -P 4406
+```
 
 
 
