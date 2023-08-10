@@ -131,9 +131,8 @@ Use the commands below to change the default MySQL/MariaDB Database port in Linu
 ```
 vim /etc/mysql/mariadb.conf.d/50-server.cnf
 ```
-add the parameter port = 4406
+add the parameter under [mysqld] port = 4406
 ```
-[mysqld]
 port = 4406
 : wq! save and exit
 ```
