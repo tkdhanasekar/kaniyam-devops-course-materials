@@ -4,7 +4,7 @@ required package
 ```
 sudo apt install sshpass
 ```
-First create hidden password file
+First create hidden password file from your home dir
 ```
 touch .secrets
 vim .secrets
