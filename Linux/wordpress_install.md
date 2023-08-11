@@ -29,7 +29,7 @@ create wordpress configuration file
 ```
 sudo vim /etc/apache2/sites-available/wordpress.conf
 ```
-`
+```
 <VirtualHost *:80>
 ServerAdmin admin@example.com
 DocumentRoot /var/www/html/wordpress
@@ -44,7 +44,7 @@ CustomLog ${APACHE_LOG_DIR}/access.log combined
 </VirtualHost>
 
 :wq! save and exit
-`
+```
 enable the virtual host and the rewrite module
 ```
 sudo a2ensite wordpress.conf
