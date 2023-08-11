@@ -33,7 +33,7 @@ sudo vim /etc/apache2/sites-available/wordpress.conf
 <VirtualHost *:80>
 ServerAdmin admin@example.com
 DocumentRoot /var/www/html/wordpress
-ServerName <server_ip>
+ServerName ==<server_ip>==
 <Directory /var/www/html/wordpress/>
 Options FollowSymLinks
 AllowOverride All
