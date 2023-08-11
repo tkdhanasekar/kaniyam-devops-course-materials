@@ -54,4 +54,4 @@ sudo systemctl restart apache2
 ```
 in the browser</br>
 http://server_ip
-![screenshot](/home/venus/kaniyam-devops-course-materials/pictures/screenshot1.png)
+
