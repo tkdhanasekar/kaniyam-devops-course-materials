@@ -52,6 +52,6 @@ sudo systemctl reload apache2
 sudo a2enmod rewrite
 sudo systemctl restart apache2
 ```
-in the browser
+in the browser\n
 http://server_ip
 
