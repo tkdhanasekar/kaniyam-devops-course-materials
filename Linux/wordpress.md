@@ -3,10 +3,11 @@
 Install LAMP Stack before install wordpress
 - [LAMP Stack Installation](https://github.com/tkdhanasekar/kaniyam-devops-course-materials/blob/main/Linux/lamp-stack.md)
 
-Login to mariadb
-create wordpress user and wordpress database and give privileges
+Login to mariadb and create wordpress user and wordpress database and give privileges
 ```
 mysql -u root -p
+```
+```
 CREATE USER 'wpuser'@'localhost' IDENTIFIED BY 'kan123';
 CREATE DATABASE wpdb;
 GRANT ALL PRIVILEGES ON wpdb.* TO 'wpuser'@'localhost';
