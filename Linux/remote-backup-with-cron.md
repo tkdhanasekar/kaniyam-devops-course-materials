@@ -50,9 +50,6 @@ To list the cron jobs
 crontab -l
 ```
 
-  
-```
-
 
 
 
