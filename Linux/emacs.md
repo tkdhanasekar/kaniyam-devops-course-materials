@@ -11,7 +11,7 @@ source ~/.bashrc
 ```
 
 
-**Meta key is ESC**
+**Meta key is ALT key**
 
 To write a file
 ```
@@ -19,19 +19,19 @@ emacs test.txt
 ```
 To find and replace
 ```
-ESC SHIFT+x replace-string hai enter hello enter
+ALT SHIFT+x replace-string hai enter hello enter
 ```
 
 To go to last line of the file
 ```
-ESC SHIFT > to go to last line
+ALT SHIFT > to go to last line
 ```
 ```
-ESC SHIFT < to go to first line
+ALT SHIFT < to go to first line
 ```
 To make line number
 ```
-ESC SHIFT+x  linum-mode
+ALT SHIFT+x  linum-mode
 ```
 To cut the text,
 ```
@@ -69,7 +69,7 @@ it will ask y,n.....
 ```
 To quit without saving
 ```
-ESC then x kill-emacs
+ALT then x kill-emacs
 ```
 To save as
 ```
