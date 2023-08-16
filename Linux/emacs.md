@@ -31,14 +31,23 @@ ALT SHIFT < to go to first line
 ```
 To make line number
 ```
-ALT SHIFT+x  linum-mode
+ALT +x  linum-mode
 ```
 To cut the text,
 ```
+emacs -nw -q test.txt
+```
+To select
+```
 press CTRL + SPACE
 ```
+To cut
 ```
 press CTRL+w.
+```
+To paste
+```
+CTRL + y
 ```
 To copy the text,
 ```
@@ -50,7 +59,7 @@ press CTRL+y
 ```
 go to line number
 ```
-ESC SHIFT+x goto-line enter
+ALT +x goto-line enter
 ```
 To go to start of line
 ```
