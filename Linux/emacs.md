@@ -35,6 +35,9 @@ ALT SHIFT+x  linum-mode
 ```
 To cut the text,
 ```
+press CTRL + SPACE
+```
+```
 press CTRL+w.
 ```
 To copy the text,
