@@ -1,4 +1,6 @@
 #!/bin/bash
+# create password .secrets and encrypt
+
 sudo apt update
 sudo apt install sshpass gnupg2
 sudo apt install apache2 apache2-utils -y

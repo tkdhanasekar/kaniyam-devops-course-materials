@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# create password .secrets and encrypt
 
 sudo apt update
 sudo apt install sshpass gnupg2
