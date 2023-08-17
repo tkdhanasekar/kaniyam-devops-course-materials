@@ -25,10 +25,12 @@ y
 y
 EOF
 mariadb --version
-sudo add-apt-repository ppa:ondrej/php -y
-sudo apt update
-sudo apt install php8.2 libapache2-mod-php8.2 php8.2-mysql php-common php8.2-cli php8.2-common php8.2-opcache php8.2-readline php-json
-a2enmod php8.2 -y
+# php8.2 installation
+# sudo add-apt-repository ppa:ondrej/php -y
+# sudo apt update
+# sudo apt install php8.2 libapache2-mod-php8.2 php8.2-mysql php-common php8.2-cli php8.2-common php8.2-opcache php8.2-readline php-json
+sudo apt install php libapache2-mod-php php-mysql php-common php-cli php-common php-opcache php-readline php-json
+a2enmod php8.1
 sudo systemctl restart apache2
 php --version
 #echo "$USER ALL=(ALL:ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/$USER
