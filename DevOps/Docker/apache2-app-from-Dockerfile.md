@@ -25,6 +25,11 @@ create the index.html file
 ```
 <h1> Hi this is Apache Docker Container</h1>
 ```
+The apache folder will look like
+```
+$ ls
+Dockerfile  index.html
+```
 build the Dockerfile
 ```
 $ docker build -t myapache .
