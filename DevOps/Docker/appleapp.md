@@ -34,7 +34,7 @@ $ vim index.html
 <head>
 <style>
 body {
-  background-image: url('apple1.jpg');
+  background-image: url('apple.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
