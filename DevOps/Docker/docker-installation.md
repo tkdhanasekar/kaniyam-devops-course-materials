@@ -47,11 +47,12 @@ ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 ```
 check the versions
 ```
-docker version
-docker compose version
-docker-compose version
+docker version && docker compose version && docker-compose version
 ```
-
+docker restart , enable , status check
+```
+sudo systemctl restart docker && sudo systemctl enable docker && sudo systemctl status docker --no-pager -l
+```
 
 To remove docker and docker plugins
 ```
