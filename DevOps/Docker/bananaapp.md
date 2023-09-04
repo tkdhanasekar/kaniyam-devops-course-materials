@@ -1,10 +1,10 @@
-## app1
+## app2
 
-### creating app1 from Docker file
+### creating app2 from Docker file
 
-create directory apple and navigate to the directory
+create directory banana and navigate to the directory
 ```
-$ mkdir apple && cd apple
+$ mkdir banana && cd banana
 ```
 create the Dockerfile
 ```
@@ -18,7 +18,7 @@ RUN apt-get install apache2 -y
 RUN apt-get install apache2-utils -y
 RUN apt-get clean
 COPY index.html /var/www/html/
-COPY apple.jpg /var/www/html/
+COPY banana.jpg /var/www/html/
 EXPOSE 80
 CMD ["apache2ctl","-D","FOREGROUND"]
 ```
@@ -34,7 +34,7 @@ $ vim index.html
 <head>
 <style>
 body {
-  background-image: url('apple.jpg');
+  background-image: url('banana.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
@@ -47,30 +47,30 @@ body {
 ```
 :wq! save and exit
 
-keep the image apple.jpg in the same folder
+keep the image banana.jpg in the same folder
 ```
-$ wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1KeNpQYQmBUleWGxzsTI--N9hCgeOaF5J' -O apple.jpg
+$ wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1dzZDaEO99ZweDb-PIyfkdQ_DuChHUvl0' -O banana.jpg
 ```
 the folder will have the 3 files
 ```
 $ ls
-apple.jpg  Dockerfile  index.html
+banana.jpg  Dockerfile  index.html
 ```
 build the Dokcerfile
 ```
-$ docker build -t apple .
+$ docker build -t banana .
 ```
 run the docker container in detached mode
 ```
-$ docker run -d --name apple_app -p 8080:80 apple
+$ docker run -d --name banana_app -p 8081:80 banana
 ```
 check with 
 ```
 $ docker ps
 ```
-access the apple_app with
+access the banana_app with
 ```
-http://server_ip:8080
+http://server_ip:8081
 ```
 
 
