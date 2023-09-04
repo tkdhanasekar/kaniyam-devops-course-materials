@@ -69,4 +69,7 @@ access in browser
 ```
 http://server_ip:8087
 ```
-
+To access phpmyadmin
+```
+http://server_ip:8088
+```
