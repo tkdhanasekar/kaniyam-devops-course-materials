@@ -53,6 +53,19 @@ docker restart , enable , status check
 ```
 sudo systemctl restart docker && sudo systemctl enable docker && sudo systemctl status docker --no-pager -l
 ```
+Post Installation steps
+create docker group
+```
+sudo groupadd docker
+```
+Add your user to the docker group.
+```
+sudo usermod -aG docker $USER
+```
+to activate the changes to groups
+```
+newgrp docker
+```
 
 To remove docker and docker plugins
 ```
