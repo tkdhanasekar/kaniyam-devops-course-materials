@@ -51,7 +51,9 @@ docker version && docker compose version && docker-compose version
 ```
 docker restart , enable , status check
 ```
-sudo systemctl restart docker && sudo systemctl enable docker && sudo systemctl status docker --no-pager -l
+sudo systemctl restart docker 
+sudo systemctl enable docker 
+sudo systemctl status docker
 ```
 Post Installation steps
 create docker group
