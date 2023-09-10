@@ -56,6 +56,10 @@ volumes:
 
 
 ```
+To validate the docker-compose.yml
+```
+docker-compose -f docker-compose.yml config
+```
 
 To start the wordpress application container
 ```
@@ -73,3 +77,5 @@ To access phpmyadmin
 ```
 http://server_ip:8088
 ```
+
+
