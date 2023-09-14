@@ -9,52 +9,28 @@ create a file docker-compose.yml
 vim docker-compose.yml
 ```
 ```
-version: '3.9'
-
+version: "3"
 services:
-  mysql:
-    image: mysql:8.0
-    volumes:
-      - mysql_data:/var/lib/mysql
-    restart: always
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: wordpress
-      MYSQL_USER: wordpress
-      MYSQL_PASSWORD: wordpress
-    
-
-  phpmyadmin:
-    image: phpmyadmin/phpmyadmin
-    depends_on:
-      - mysql
-    environment:
-      PMA_HOST: mysql
-      PMA_PORT: 3306
-      PMA_ARBITRARY: 1
-    restart: always
-    ports:
-      - 8088:80
-
   wordpress:
-    depends_on:
-      - mysql
-    image: wordpress:latest
+    container_name: my_wordpress
+    image: wordpress
     ports:
-      - "8087:80"
-    restart: always
+      - "8080:80"
+    links:
+      - mysql
     environment:
-      WORDPRESS_DB_HOST: mysql:3306
-      WORDPRESS_DB_USER: wordpress
-      WORDPRESS_DB_PASSWORD: wordpress
+      WORDPRESS_DB_HOST: mysql
+      WORDPRESS_DB_USER: root
+      WORDPRESS_DB_PASSWORD: "12345"
       WORDPRESS_DB_NAME: wordpress
+  mysql:
+    container_name: my_mysql
+    image: "mysql:5.7"
     volumes:
-      - ./wordpress:/var/www/html
-
-volumes:
-  mysql_data: {}
-
-
+      - ./.mysql:/var/lib/mysql
+    environment:
+      MYSQL_DATABASE: wordpress
+      MYSQL_ROOT_PASSWORD: "12345"
 ```
 To validate the docker-compose.yml
 ```
