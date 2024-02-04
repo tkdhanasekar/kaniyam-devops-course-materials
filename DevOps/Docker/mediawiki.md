@@ -22,16 +22,10 @@ services:
       - database
     volumes:
       - images:/var/www/html/images
-      # After initial setup, download LocalSettings.php to the same directory as
-      # this yaml and uncomment the following line and use compose to restart
-      # the mediawiki service
-      # - ./LocalSettings.php:/var/www/html/LocalSettings.php
-  # This key also defines the name of the database host used during setup instead of the default "localhost"
   database:
     image: mariadb
     restart: always
     environment:
-      # @see https://phabricator.wikimedia.org/source/mediawiki/browse/master/includes/DefaultSettings.php
       MYSQL_DATABASE: my_wiki
       MYSQL_USER: wikiuser
       MYSQL_PASSWORD: example
