@@ -173,17 +173,17 @@ then Login to dockerhub using
 docker login
 ```
 ```
-docker tag dnadna/orange-demo:v1 dnadna/orange:latest
+docker tag dnadna/orange:latest dnadna/orange:v1
 ```
 
 then push to dockerhub
 ```
-docker push dnadna/orange:latest
+docker push dnadna/orange:v1
 ```
 
 To pull the above image from dockerhub registry to local
 ```
-docker pull dnddna/orange:latest
+docker pull dnddna/orange:v1
 ```
 
 To stop a running container
